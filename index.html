@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ëæ»úÊýÉú³ÉÆ÷ | ÔÚÏß¹¤¾ß</title>
+    <title>éšæœºæ•°ç”Ÿæˆå™¨ | åœ¨çº¿å·¥å…·</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -288,7 +288,7 @@
             }
         }
         
-        /* ¹ö¶¯ÌõÑùÊ½ */
+        /* æ»šåŠ¨æ¡æ ·å¼ */
         .history-container::-webkit-scrollbar {
             width: 8px;
         }
@@ -338,60 +338,60 @@
 <body>
     <div class="container">
         <header>
-            <h1><i class="fas fa-random"></i> Ëæ»úÊýÉú³ÉÆ÷</h1>
-            <p class="subtitle">Éú³ÉÖ¸¶¨·¶Î§ÄÚµÄËæ»úÕûÊý£¬Ö§³Ö×Ô¶¨Òå·¶Î§ºÍÈ¥ÖØ¹¦ÄÜ</p>
+            <h1><i class="fas fa-random"></i> éšæœºæ•°ç”Ÿæˆå™¨</h1>
+            <p class="subtitle">ç”ŸæˆæŒ‡å®šèŒƒå›´å†…çš„éšæœºæ•´æ•°ï¼Œæ”¯æŒè‡ªå®šä¹‰èŒƒå›´å’ŒåŽ»é‡åŠŸèƒ½</p>
         </header>
         
         <div class="main-content">
             <div class="card">
                 <div class="card-header">
-                    <i class="fas fa-sliders-h"></i> Ëæ»úÊýÉèÖÃ
+                    <i class="fas fa-sliders-h"></i> éšæœºæ•°è®¾ç½®
                 </div>
                 <div class="card-content">
                     <div class="form-group">
-                        <label for="minValue">×îÐ¡Öµ</label>
+                        <label for="minValue">æœ€å°å€¼</label>
                         <input type="number" id="minValue" value="1" min="-999999" max="999999">
                     </div>
                     
                     <div class="form-group">
-                        <label for="maxValue">×î´óÖµ</label>
+                        <label for="maxValue">æœ€å¤§å€¼</label>
                         <input type="number" id="maxValue" value="100" min="-999999" max="999999">
                         <div class="range-display">
-                            <span>·¶Î§: <span id="rangeDisplay">1 µ½ 100</span></span>
-                            <span>¹² <span id="totalNumbers">100</span> ¸ö¿ÉÄÜÖµ</span>
+                            <span>èŒƒå›´: <span id="rangeDisplay">1 åˆ° 100</span></span>
+                            <span>å…± <span id="totalNumbers">100</span> ä¸ªå¯èƒ½å€¼</span>
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="quantity">Éú³ÉÊýÁ¿</label>
+                        <label for="quantity">ç”Ÿæˆæ•°é‡</label>
                         <input type="number" id="quantity" value="1" min="1" max="50">
                     </div>
                     
                     <div class="checkbox-group">
                         <input type="checkbox" id="uniqueCheckbox" checked>
-                        <label for="uniqueCheckbox">Éú³ÉÎ¨Ò»Öµ£¨²»ÖØ¸´£©</label>
+                        <label for="uniqueCheckbox">ç”Ÿæˆå”¯ä¸€å€¼ï¼ˆä¸é‡å¤ï¼‰</label>
                     </div>
                     
                     <div class="buttons">
                         <button class="btn btn-primary" id="generateBtn">
-                            <i class="fas fa-bolt"></i> Éú³ÉËæ»úÊý
+                            <i class="fas fa-bolt"></i> ç”Ÿæˆéšæœºæ•°
                         </button>
                         <button class="btn btn-secondary" id="resetBtn">
-                            <i class="fas fa-redo"></i> ÖØÖÃÉèÖÃ
+                            <i class="fas fa-redo"></i> é‡ç½®è®¾ç½®
                         </button>
                     </div>
                     
                     <div class="result-box">
-                        <div class="result-label">Éú³ÉµÄËæ»úÊý</div>
+                        <div class="result-label">ç”Ÿæˆçš„éšæœºæ•°</div>
                         <div class="result-number" id="resultNumber">--</div>
                     </div>
                     
                     <div class="buttons" style="margin-top: 20px;">
                         <button class="btn btn-secondary" id="copyBtn">
-                            <i class="far fa-copy"></i> ¸´ÖÆµ½¼ôÌù°å
+                            <i class="far fa-copy"></i> å¤åˆ¶åˆ°å‰ªè´´æ¿
                         </button>
                         <button class="btn btn-secondary" id="clearHistoryBtn">
-                            <i class="far fa-trash-alt"></i> Çå³ýÀúÊ·¼ÇÂ¼
+                            <i class="far fa-trash-alt"></i> æ¸…é™¤åŽ†å²è®°å½•
                         </button>
                     </div>
                 </div>
@@ -399,20 +399,20 @@
             
             <div class="card">
                 <div class="card-header">
-                    <i class="fas fa-history"></i> Éú³ÉÀúÊ·
+                    <i class="fas fa-history"></i> ç”ŸæˆåŽ†å²
                 </div>
                 <div class="card-content">
-                    <p style="margin-bottom: 15px; color: #666;">×î½üÉú³ÉµÄËæ»úÊý¼ÇÂ¼£º</p>
+                    <p style="margin-bottom: 15px; color: #666;">æœ€è¿‘ç”Ÿæˆçš„éšæœºæ•°è®°å½•ï¼š</p>
                     <div class="history-container" id="historyContainer">
-                        <!-- ÀúÊ·¼ÇÂ¼½«ÔÚÕâÀï¶¯Ì¬Éú³É -->
+                        <!-- åŽ†å²è®°å½•å°†åœ¨è¿™é‡ŒåŠ¨æ€ç”Ÿæˆ -->
                         <div class="history-item">
                             <div>
                                 <div class="history-number">42</div>
-                                <div class="history-range">·¶Î§: 1 µ½ 100</div>
+                                <div class="history-range">èŒƒå›´: 1 åˆ° 100</div>
                             </div>
                             <div>
-                                <div class="history-time">¸Õ¸Õ</div>
-                                <button class="copy-btn" title="¸´ÖÆ">
+                                <div class="history-time">åˆšåˆš</div>
+                                <button class="copy-btn" title="å¤åˆ¶">
                                     <i class="far fa-copy"></i>
                                 </button>
                             </div>
@@ -421,11 +421,11 @@
                         <div class="history-item">
                             <div>
                                 <div class="history-number">73</div>
-                                <div class="history-range">·¶Î§: 1 µ½ 100</div>
+                                <div class="history-range">èŒƒå›´: 1 åˆ° 100</div>
                             </div>
                             <div>
-                                <div class="history-time">2·ÖÖÓÇ°</div>
-                                <button class="copy-btn" title="¸´ÖÆ">
+                                <div class="history-time">2åˆ†é’Ÿå‰</div>
+                                <button class="copy-btn" title="å¤åˆ¶">
                                     <i class="far fa-copy"></i>
                                 </button>
                             </div>
@@ -434,11 +434,11 @@
                         <div class="history-item">
                             <div>
                                 <div class="history-number">15</div>
-                                <div class="history-range">·¶Î§: 1 µ½ 100</div>
+                                <div class="history-range">èŒƒå›´: 1 åˆ° 100</div>
                             </div>
                             <div>
-                                <div class="history-time">5·ÖÖÓÇ°</div>
-                                <button class="copy-btn" title="¸´ÖÆ">
+                                <div class="history-time">5åˆ†é’Ÿå‰</div>
+                                <button class="copy-btn" title="å¤åˆ¶">
                                     <i class="far fa-copy"></i>
                                 </button>
                             </div>
@@ -447,7 +447,7 @@
                     
                     <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #eee;">
                         <p style="color: #666; font-size: 0.9rem;">
-                            <i class="fas fa-info-circle"></i> ÌáÊ¾£ºµã»÷ÀúÊ·¼ÇÂ¼ÅÔ±ßµÄ¸´ÖÆ°´Å¥¿ÉÒÔ¿ìËÙ¸´ÖÆ¸ÃÊýÖµ
+                            <i class="fas fa-info-circle"></i> æç¤ºï¼šç‚¹å‡»åŽ†å²è®°å½•æ—è¾¹çš„å¤åˆ¶æŒ‰é’®å¯ä»¥å¿«é€Ÿå¤åˆ¶è¯¥æ•°å€¼
                         </p>
                     </div>
                 </div>
@@ -455,18 +455,18 @@
         </div>
         
         <footer>
-            <p>Ëæ»úÊýÉú³ÉÆ÷ &copy; 2023 | Ê¹ÓÃ´¿HTML/CSS/JavaScriptÊµÏÖ</p>
-            <p>±¾¹¤¾ßÍêÈ«ÔÚä¯ÀÀÆ÷¶ËÔËÐÐ£¬²»»áÊÕ¼¯»ò´«ÊäÈÎºÎÊý¾Ý</p>
+            <p>éšæœºæ•°ç”Ÿæˆå™¨ &copy; 2023 | ä½¿ç”¨çº¯HTML/CSS/JavaScriptå®žçŽ°</p>
+            <p>æœ¬å·¥å…·å®Œå…¨åœ¨æµè§ˆå™¨ç«¯è¿è¡Œï¼Œä¸ä¼šæ”¶é›†æˆ–ä¼ è¾“ä»»ä½•æ•°æ®</p>
         </footer>
     </div>
     
     <div class="notification" id="notification">
         <i class="fas fa-check-circle"></i>
-        <span id="notificationText">ÒÑ¸´ÖÆµ½¼ôÌù°å£¡</span>
+        <span id="notificationText">å·²å¤åˆ¶åˆ°å‰ªè´´æ¿ï¼</span>
     </div>
     
     <script>
-        // DOMÔªËØ
+        // DOMå…ƒç´ 
         const minValueInput = document.getElementById('minValue');
         const maxValueInput = document.getElementById('maxValue');
         const quantityInput = document.getElementById('quantity');
@@ -482,19 +482,19 @@
         const notification = document.getElementById('notification');
         const notificationText = document.getElementById('notificationText');
         
-        // ´æ´¢ÀúÊ·¼ÇÂ¼
+        // å­˜å‚¨åŽ†å²è®°å½•
         let history = JSON.parse(localStorage.getItem('randomNumberHistory')) || [
-            {number: "42", min: 1, max: 100, time: "¸Õ¸Õ"},
-            {number: "73", min: 1, max: 100, time: "2·ÖÖÓÇ°"},
-            {number: "15", min: 1, max: 100, time: "5·ÖÖÓÇ°"}
+            {number: "42", min: 1, max: 100, time: "åˆšåˆš"},
+            {number: "73", min: 1, max: 100, time: "2åˆ†é’Ÿå‰"},
+            {number: "15", min: 1, max: 100, time: "5åˆ†é’Ÿå‰"}
         ];
         
-        // ³õÊ¼»¯Ò³Ãæ
+        // åˆå§‹åŒ–é¡µé¢
         function initPage() {
             updateRangeDisplay();
             renderHistory();
             
-            // Ìí¼ÓÊÂ¼þ¼àÌýÆ÷
+            // æ·»åŠ äº‹ä»¶ç›‘å¬å™¨
             minValueInput.addEventListener('input', updateRangeDisplay);
             maxValueInput.addEventListener('input', updateRangeDisplay);
             generateBtn.addEventListener('click', generateRandomNumbers);
@@ -502,16 +502,16 @@
             copyBtn.addEventListener('click', copyToClipboard);
             clearHistoryBtn.addEventListener('click', clearHistory);
             
-            // ÏÔÊ¾Ê¾ÀýËæ»úÊý
+            // æ˜¾ç¤ºç¤ºä¾‹éšæœºæ•°
             resultNumber.textContent = "42";
         }
         
-        // ¸üÐÂ·¶Î§ÏÔÊ¾
+        // æ›´æ–°èŒƒå›´æ˜¾ç¤º
         function updateRangeDisplay() {
             const min = parseInt(minValueInput.value) || 0;
             const max = parseInt(maxValueInput.value) || 100;
             
-            // È·±£×îÐ¡Öµ²»³¬¹ý×î´óÖµ
+            // ç¡®ä¿æœ€å°å€¼ä¸è¶…è¿‡æœ€å¤§å€¼
             if (min > max) {
                 minValueInput.value = max;
                 maxValueInput.value = min;
@@ -521,35 +521,35 @@
             const rangeMax = parseInt(maxValueInput.value) || 100;
             const total = Math.abs(rangeMax - rangeMin) + 1;
             
-            rangeDisplay.textContent = `${rangeMin} µ½ ${rangeMax}`;
+            rangeDisplay.textContent = `${rangeMin} åˆ° ${rangeMax}`;
             totalNumbers.textContent = total;
         }
         
-        // Éú³ÉËæ»úÊý
+        // ç”Ÿæˆéšæœºæ•°
         function generateRandomNumbers() {
             const min = parseInt(minValueInput.value) || 0;
             const max = parseInt(maxValueInput.value) || 100;
             const quantity = parseInt(quantityInput.value) || 1;
             const unique = uniqueCheckbox.checked;
             
-            // ÑéÖ¤ÊäÈë
+            // éªŒè¯è¾“å…¥
             if (min > max) {
-                showNotification("×îÐ¡Öµ²»ÄÜ´óÓÚ×î´óÖµ£¡", "error");
+                showNotification("æœ€å°å€¼ä¸èƒ½å¤§äºŽæœ€å¤§å€¼ï¼", "error");
                 return;
             }
             
             const range = max - min + 1;
             
             if (unique && quantity > range) {
-                showNotification(`ÒªÇóÉú³É ${quantity} ¸öÎ¨Ò»Öµ£¬µ«·¶Î§ ${min} µ½ ${max} Ö»ÓÐ ${range} ¸ö¿ÉÄÜÖµ¡£`, "error");
+                showNotification(`è¦æ±‚ç”Ÿæˆ ${quantity} ä¸ªå”¯ä¸€å€¼ï¼Œä½†èŒƒå›´ ${min} åˆ° ${max} åªæœ‰ ${range} ä¸ªå¯èƒ½å€¼ã€‚`, "error");
                 return;
             }
             
-            // Éú³ÉËæ»úÊý
+            // ç”Ÿæˆéšæœºæ•°
             let numbers = [];
             
             if (unique) {
-                // Éú³ÉÎ¨Ò»Ëæ»úÊý
+                // ç”Ÿæˆå”¯ä¸€éšæœºæ•°
                 const possibleNumbers = Array.from({length: range}, (_, i) => i + min);
                 
                 for (let i = 0; i < quantity; i++) {
@@ -558,20 +558,20 @@
                     possibleNumbers.splice(randomIndex, 1);
                 }
             } else {
-                // Éú³ÉËæ»úÊý£¨¿ÉÄÜÖØ¸´£©
+                // ç”Ÿæˆéšæœºæ•°ï¼ˆå¯èƒ½é‡å¤ï¼‰
                 for (let i = 0; i < quantity; i++) {
                     numbers.push(Math.floor(Math.random() * range) + min);
                 }
             }
             
-            // ÏÔÊ¾½á¹û
+            // æ˜¾ç¤ºç»“æžœ
             const resultText = quantity === 1 ? numbers[0] : numbers.join(", ");
             resultNumber.textContent = resultText;
             resultNumber.classList.remove('pulse');
-            void resultNumber.offsetWidth; // ´¥·¢ÖØÅÅÒÔÖØÐÂÆô¶¯¶¯»­
+            void resultNumber.offsetWidth; // è§¦å‘é‡æŽ’ä»¥é‡æ–°å¯åŠ¨åŠ¨ç”»
             resultNumber.classList.add('pulse');
             
-            // Ìí¼Óµ½ÀúÊ·¼ÇÂ¼
+            // æ·»åŠ åˆ°åŽ†å²è®°å½•
             const now = new Date();
             const timeString = formatTime(now);
             
@@ -585,23 +585,23 @@
             
             history.unshift(historyEntry);
             
-            // ÏÞÖÆÀúÊ·¼ÇÂ¼ÊýÁ¿
+            // é™åˆ¶åŽ†å²è®°å½•æ•°é‡
             if (history.length > 50) {
                 history = history.slice(0, 50);
             }
             
-            // ±£´æµ½±¾µØ´æ´¢²¢¸üÐÂÏÔÊ¾
+            // ä¿å­˜åˆ°æœ¬åœ°å­˜å‚¨å¹¶æ›´æ–°æ˜¾ç¤º
             saveHistory();
             renderHistory();
             
-            // ÏÔÊ¾³É¹¦ÏûÏ¢
+            // æ˜¾ç¤ºæˆåŠŸæ¶ˆæ¯
             const successMsg = quantity === 1 
-                ? `ÒÑÉú³ÉËæ»úÊý: ${resultText}` 
-                : `ÒÑÉú³É ${quantity} ¸öËæ»úÊý`;
+                ? `å·²ç”Ÿæˆéšæœºæ•°: ${resultText}` 
+                : `å·²ç”Ÿæˆ ${quantity} ä¸ªéšæœºæ•°`;
             showNotification(successMsg, "success");
         }
         
-        // ¸ñÊ½»¯Ê±¼ä
+        // æ ¼å¼åŒ–æ—¶é—´
         function formatTime(date) {
             const now = new Date();
             const diffMs = now - date;
@@ -609,19 +609,19 @@
             const diffMin = Math.floor(diffSec / 60);
             const diffHour = Math.floor(diffMin / 60);
             
-            if (diffSec < 60) return "¸Õ¸Õ";
-            if (diffMin < 60) return `${diffMin}·ÖÖÓÇ°`;
-            if (diffHour < 24) return `${diffHour}Ð¡Ê±Ç°`;
+            if (diffSec < 60) return "åˆšåˆš";
+            if (diffMin < 60) return `${diffMin}åˆ†é’Ÿå‰`;
+            if (diffHour < 24) return `${diffHour}å°æ—¶å‰`;
             
             return date.toLocaleDateString();
         }
         
-        // äÖÈ¾ÀúÊ·¼ÇÂ¼
+        // æ¸²æŸ“åŽ†å²è®°å½•
         function renderHistory() {
             historyContainer.innerHTML = '';
             
             if (history.length === 0) {
-                historyContainer.innerHTML = '<p style="text-align: center; color: #999; padding: 20px;">ÔÝÎÞÀúÊ·¼ÇÂ¼</p>';
+                historyContainer.innerHTML = '<p style="text-align: center; color: #999; padding: 20px;">æš‚æ— åŽ†å²è®°å½•</p>';
                 return;
             }
             
@@ -631,11 +631,11 @@
                 historyItem.innerHTML = `
                     <div>
                         <div class="history-number">${entry.number}</div>
-                        <div class="history-range">·¶Î§: ${entry.min} µ½ ${entry.max}</div>
+                        <div class="history-range">èŒƒå›´: ${entry.min} åˆ° ${entry.max}</div>
                     </div>
                     <div>
                         <div class="history-time">${entry.time}</div>
-                        <button class="copy-btn" title="¸´ÖÆ" data-number="${entry.number}">
+                        <button class="copy-btn" title="å¤åˆ¶" data-number="${entry.number}">
                             <i class="far fa-copy"></i>
                         </button>
                     </div>
@@ -644,22 +644,22 @@
                 historyContainer.appendChild(historyItem);
             });
             
-            // Îª¸´ÖÆ°´Å¥Ìí¼ÓÊÂ¼þ¼àÌýÆ÷
+            // ä¸ºå¤åˆ¶æŒ‰é’®æ·»åŠ äº‹ä»¶ç›‘å¬å™¨
             document.querySelectorAll('.history-item .copy-btn').forEach(btn => {
                 btn.addEventListener('click', function() {
                     const number = this.getAttribute('data-number');
                     copyTextToClipboard(number);
-                    showNotification(`ÒÑ¸´ÖÆ: ${number}`, "success");
+                    showNotification(`å·²å¤åˆ¶: ${number}`, "success");
                 });
             });
         }
         
-        // ±£´æÀúÊ·¼ÇÂ¼µ½±¾µØ´æ´¢
+        // ä¿å­˜åŽ†å²è®°å½•åˆ°æœ¬åœ°å­˜å‚¨
         function saveHistory() {
             localStorage.setItem('randomNumberHistory', JSON.stringify(history));
         }
         
-        // ÖØÖÃÉèÖÃ
+        // é‡ç½®è®¾ç½®
         function resetSettings() {
             minValueInput.value = 1;
             maxValueInput.value = 100;
@@ -667,29 +667,29 @@
             uniqueCheckbox.checked = true;
             updateRangeDisplay();
             resultNumber.textContent = "--";
-            showNotification("ÉèÖÃÒÑÖØÖÃ", "info");
+            showNotification("è®¾ç½®å·²é‡ç½®", "info");
         }
         
-        // ¸´ÖÆµ½¼ôÌù°å
+        // å¤åˆ¶åˆ°å‰ªè´´æ¿
         function copyToClipboard() {
             const text = resultNumber.textContent;
             
             if (text === "--") {
-                showNotification("Ã»ÓÐ¿É¸´ÖÆµÄÄÚÈÝ£¡", "error");
+                showNotification("æ²¡æœ‰å¯å¤åˆ¶çš„å†…å®¹ï¼", "error");
                 return;
             }
             
             copyTextToClipboard(text);
-            showNotification(`ÒÑ¸´ÖÆ: ${text}`, "success");
+            showNotification(`å·²å¤åˆ¶: ${text}`, "success");
         }
         
-        // ¸´ÖÆÎÄ±¾µ½¼ôÌù°åµÄÍ¨ÓÃº¯Êý
+        // å¤åˆ¶æ–‡æœ¬åˆ°å‰ªè´´æ¿çš„é€šç”¨å‡½æ•°
         function copyTextToClipboard(text) {
-            // Ê¹ÓÃÏÖ´ú¼ôÌù°åAPI
+            // ä½¿ç”¨çŽ°ä»£å‰ªè´´æ¿API
             navigator.clipboard.writeText(text).then(() => {
-                // ³É¹¦
+                // æˆåŠŸ
             }).catch(err => {
-                // ±¸ÓÃ·½·¨
+                // å¤‡ç”¨æ–¹æ³•
                 const textArea = document.createElement("textarea");
                 textArea.value = text;
                 document.body.appendChild(textArea);
@@ -699,26 +699,26 @@
             });
         }
         
-        // Çå³ýÀúÊ·¼ÇÂ¼
+        // æ¸…é™¤åŽ†å²è®°å½•
         function clearHistory() {
             if (history.length === 0) {
-                showNotification("ÀúÊ·¼ÇÂ¼ÒÑÎª¿Õ", "info");
+                showNotification("åŽ†å²è®°å½•å·²ä¸ºç©º", "info");
                 return;
             }
             
-            if (confirm("È·¶¨ÒªÇå³ýËùÓÐÀúÊ·¼ÇÂ¼Âð£¿")) {
+            if (confirm("ç¡®å®šè¦æ¸…é™¤æ‰€æœ‰åŽ†å²è®°å½•å—ï¼Ÿ")) {
                 history = [];
                 saveHistory();
                 renderHistory();
-                showNotification("ÀúÊ·¼ÇÂ¼ÒÑÇå³ý", "success");
+                showNotification("åŽ†å²è®°å½•å·²æ¸…é™¤", "success");
             }
         }
         
-        // ÏÔÊ¾Í¨Öª
+        // æ˜¾ç¤ºé€šçŸ¥
         function showNotification(message, type) {
             notificationText.textContent = message;
             
-            // ÉèÖÃ²»Í¬ÀàÐÍµÄÑÕÉ«
+            // è®¾ç½®ä¸åŒç±»åž‹çš„é¢œè‰²
             if (type === "error") {
                 notification.style.background = "#f44336";
             } else if (type === "success") {
@@ -727,16 +727,16 @@
                 notification.style.background = "#2196F3";
             }
             
-            // ÏÔÊ¾Í¨Öª
+            // æ˜¾ç¤ºé€šçŸ¥
             notification.style.display = "flex";
             
-            // 3ÃëºóÒþ²Ø
+            // 3ç§’åŽéšè—
             setTimeout(() => {
                 notification.style.display = "none";
             }, 3000);
         }
         
-        // Ò³Ãæ¼ÓÔØÍê³Éºó³õÊ¼»¯
+        // é¡µé¢åŠ è½½å®ŒæˆåŽåˆå§‹åŒ–
         document.addEventListener('DOMContentLoaded', initPage);
     </script>
 </body>
