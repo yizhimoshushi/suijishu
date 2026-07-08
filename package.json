@@ -1,0 +1,11 @@
+{
+  "name": "suijishu",
+  "version": "1.0.0",
+  "description": "Static site on Cloudflare Workers",
+  "scripts": {
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.108.0"
+  }
+}
