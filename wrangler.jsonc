@@ -1,14 +1,14 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "suijishu",
+  // 【关键】指定 Worker 的入口文件
+  "main": "src/index.js", 
   "compatibility_date": "2026-07-08",
-  "observability": {
-    "enabled": true
-  },
+  "compatibility_flags": ["nodejs_compat"],
+  // 声明静态资源目录
   "assets": {
-    "directory": "."
-  },
-  "compatibility_flags": [
-    "nodejs_compat"
-  ]
+    "directory": ".",
+    // 绑定到 env.ASSETS
+    "binding": "ASSETS" 
+  }
 }
